@@ -2,10 +2,9 @@ import Vector2 from "./Vector2.js"
 export default class GameObject {
     constructor(x, y, width, height) {
         this.pos = new Vector2(x,y)
-        this.width = width
-        this.height = height
+        this.size = new Vector2(width,height)
     }
-
+    
     draw(ctx) {
         //Used by subclasses to draw out visuals
     }
